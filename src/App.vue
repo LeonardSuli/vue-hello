@@ -2,7 +2,8 @@
   export default {
     data() {
       return {
-        message: 'hello'
+        message: 'hello',
+        image: './assets/vue.svg'
       }
     }
   }
@@ -10,6 +11,7 @@
 
 <template>
   <h1>{{ message }}</h1>
+  <img :src='image'  alt="">
 </template>
 
 <style>
